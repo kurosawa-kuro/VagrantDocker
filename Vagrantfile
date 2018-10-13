@@ -12,7 +12,10 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
-  config.vm.box = "base"
+  # 16.04.5 LTS (GNU/Linux 4.4.0-135-generic x86_64)
+  # config.vm.box = "ubuntu/xenial64"
+  # 18.04.1 LTS (GNU/Linux 4.15.0-34-generic x86_64)
+  config.vm.box = "ubuntu/bionic64"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

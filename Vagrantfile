@@ -52,7 +52,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vb|
     vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate//home/vagrant/workspace","1"]
   end
-  
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
@@ -72,8 +72,18 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get update
-  #   apt-get install -y apache2
-  # SHELL
+  config.vm.provision :shell, path: "bootstrap/init.sh"
+  
+  # # config.vm.provision :shell, path: "bootstrap/nginx.sh"
+  # config.vm.provision :shell, path: "bootstrap/java.sh"
+  # config.vm.provision :shell, privileged: false, path: "bootstrap/play.sh"
+  # config.vm.provision :shell, path: "bootstrap/db_mysql.sh"
+  # # config.vm.provision :shell, path: "bootstrap/db_postgresql.sh"
+
+  # config.vm.provision :shell, path: "bootstrap/nodejs.sh"
+
+  # config.vm.provision :shell, path: "bootstrap/ethereum.sh"
+
+  config.vm.provision :shell, path: "bootstrap/docker.sh"
+  config.vm.provision :shell, path: "bootstrap/check.sh"
 end

@@ -19,6 +19,7 @@ Vagrant.configure("2") do |config|
   # argument is a set of non-required options.
   # config.vm.synced_folder "../data", "/vagrant_data"
   config.vm.synced_folder "./workspace", "/home/vagrant/workspace"
+  config.vm.synced_folder "./docker_web", "/home/vagrant/docker_web"
   # config.vm.provider :virtualbox do |vb|
   #   vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate//home/vagrant/workspace","1"]
   # end

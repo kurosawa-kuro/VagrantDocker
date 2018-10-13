@@ -40,18 +40,18 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision :shell, path: "bootstrap/init.sh"
+  config.vm.provision :shell, path: "vagrant/bootstrap/init.sh"
   
-  # # config.vm.provision :shell, path: "bootstrap/nginx.sh"
-  # config.vm.provision :shell, path: "bootstrap/java.sh"
-  # config.vm.provision :shell, privileged: false, path: "bootstrap/play.sh"
-  # config.vm.provision :shell, path: "bootstrap/db_mysql.sh"
-  # # config.vm.provision :shell, path: "bootstrap/db_postgresql.sh"
+  # # config.vm.provision :shell, path: "vagrant/bootstrap/nginx.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/java.sh"
+  # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/play.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/db_mysql.sh"
+  # # config.vm.provision :shell, path: "vagrant/bootstrap/db_postgresql.sh"
 
-  # config.vm.provision :shell, path: "bootstrap/nodejs.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
 
-  # config.vm.provision :shell, path: "bootstrap/ethereum.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/ethereum.sh"
 
-  config.vm.provision :shell, path: "bootstrap/docker.sh"
-  config.vm.provision :shell, path: "bootstrap/check.sh"
+  config.vm.provision :shell, path: "vagrant/bootstrap/docker.sh"
+  config.vm.provision :shell, path: "vagrant/bootstrap/check.sh"
 end

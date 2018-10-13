@@ -21,7 +21,7 @@ vagrant destroy -f
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m vagrant up --provision \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-vagrant up --provision
+vagrant up
 
 # デバッグを終了する
 set +x

@@ -129,8 +129,19 @@ docker-compose up web mysql mysql-gui portainer cloud9
 
 # IDE
 ## Visual Studio Code
-### SFTP
+
+### lang
+- Docker
+
+### Other
+
+- sftp
 
 ```
 Ctrl+Shift+P on Windows/Linux open command palette, run SFTP: config command.
 ```
+
+- GitLens
+- Git History
+
+

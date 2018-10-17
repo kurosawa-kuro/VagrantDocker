@@ -1,4 +1,4 @@
 .vagrant
 *.log
 *.box
-.vscode/*
+.vagrant/machines/default/virtualbox/vagrant_cwd

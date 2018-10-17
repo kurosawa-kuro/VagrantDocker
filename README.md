@@ -89,6 +89,36 @@ echo -e $'\e[1;31m ================================= \e[m'
 docker-compose up web mysql mysql-gui portainer cloud9
 ```
 
+## Webページアクセス
+### portainer  
+- Vagrant  
+192.168.33.10/3000
+
+- Docker  
+localhost/3000
+
+### Ruby On Rails  
+- Vagrant  
+192.168.33.10/3000
+
+- Docker  
+localhost/3000
+
+### phpMyAdmin  
+- Vagrant  
+192.168.33.10/3000
+
+- Docker  
+localhost/3000
+
+
+### cloud9  
+- Vagrant  
+192.168.33.10/3000
+
+- Docker  
+localhost/3000
+
 
 # IDE
 ## VSC

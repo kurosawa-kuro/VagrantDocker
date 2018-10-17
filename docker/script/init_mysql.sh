@@ -43,8 +43,7 @@ docker-compose run web bundle exec rake db:create
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m コンテナ起動、ウェブサーバー起動       \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-# rm -f workspace/tmp/pids/server.pid && docker-compose up web mysql mysql-gui portainer
-rm -f workspace/tmp/pids/server.pid && docker-compose up web mysql mysql-gui portainer cloud9
+docker-compose up web mysql mysql-gui portainer cloud9
 
 # デバッグを終了する
 set +x

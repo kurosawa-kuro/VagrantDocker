@@ -12,3 +12,5 @@ test/vagrant-spec/.vagrant/
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant
 /.vagrant/
+
+.vscode/settings.json

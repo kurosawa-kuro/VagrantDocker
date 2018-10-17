@@ -122,7 +122,7 @@ localhost/9001
 
 
 # IDE
-## VSC
+## Visual Studio Code
 ### SFTP
 
 ```

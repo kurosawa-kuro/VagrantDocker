@@ -11,6 +11,30 @@ Vagrantの操作
 - Vagrantfile
 Vagrantの設定
 
+# Vagrant
+
+## Vagrantで仮想環境作成
+
+```
+vagrant up
+```
+
+bootstrapが反応してprovisionされ、ミドルウェア・ライブラリがインストールされます。
+
+## Vagrantで作成された仮想環境の停止、削除
+
+```
+vagrant halt
+```
+
+```
+vagrant destroy
+```
+
+# Docker
+
+
+
 # IDE
 ## VSC
 ### SFTP

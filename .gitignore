@@ -11,3 +11,4 @@ test/vagrant-spec/.vagrant/
 *.box
 .vagrant/machines/default/virtualbox/vagrant_cwd
 .vagrant
+/.vagrant/

@@ -8,7 +8,7 @@ Dockerの設定、操作
 - vagrant  
 Vagrantの操作
 
-- Vagrantfile
+- Vagrantfile  
 Vagrantの設定
 
 # Vagrant

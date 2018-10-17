@@ -15,8 +15,8 @@ Vagrantの設定
 
 ## Vagrantで仮想環境作成、ログイン
 
-- 環境作成
-
+- 環境作成  
+bootstrapが反応してprovisionされ、ミドルウェア・ライブラリがインストールされます。
 ```
 vagrant up
 ```
@@ -27,7 +27,14 @@ vagrant up
 vagrant ssh
 ```
 
-bootstrapが反応してprovisionされ、ミドルウェア・ライブラリがインストールされます。
+- IDE(theia-ide)
+ 
+```
+docker run -it -p 9001:9001 -v "$(pwd):/home/project:cached" theiaide/theia:next
+```
+
+[192.168.33.10:9001](http://192.168.33.10:9001)
+
 
 ## Vagrantで作成された仮想環境の停止、削除
 

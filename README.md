@@ -90,12 +90,13 @@ docker-compose up web mysql mysql-gui portainer cloud9
 ```
 
 ## Webページアクセス
-### portainer  
+
+### portainer.io  
 - Vagrant  
-192.168.33.10/3000
+192.168.33.10/9000
 
 - Docker  
-localhost/3000
+localhost/9000
 
 ### Ruby On Rails  
 - Vagrant  
@@ -106,18 +107,18 @@ localhost/3000
 
 ### phpMyAdmin  
 - Vagrant  
-192.168.33.10/3000
+192.168.33.10/8888
 
 - Docker  
-localhost/3000
+localhost/8888
 
 
-### cloud9  
+### Cloud9  
 - Vagrant  
-192.168.33.10/3000
+192.168.33.10/9001
 
 - Docker  
-localhost/3000
+localhost/9001
 
 
 # IDE

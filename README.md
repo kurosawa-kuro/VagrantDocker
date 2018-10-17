@@ -30,10 +30,10 @@ vagrant ssh
 - IDE(theia-ide)
  
 ```
-docker run -it -p 9001:9001 -v "$(pwd):/home/project:cached" theiaide/theia:next
+docker run -it -p 3000:3000 --expose 9229 -p 9229:9229 -v "$(pwd):/home/project:cached" theiaide/theia:next --inspect=0.0.0.0:9229
 ```
 
-[192.168.33.10:9001](http://192.168.33.10:9001)
+[192.168.33.10:3000](http://192.168.33.10:3000)
 
 
 ## Vagrantで作成された仮想環境の停止、削除

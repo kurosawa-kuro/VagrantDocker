@@ -13,10 +13,18 @@ Vagrantの設定
 
 # Vagrant
 
-## Vagrantで仮想環境作成
+## Vagrantで仮想環境作成、ログイン
+
+- 環境作成
 
 ```
 vagrant up
+```
+
+- ログイン
+
+```
+vagrant ssh
 ```
 
 bootstrapが反応してprovisionされ、ミドルウェア・ライブラリがインストールされます。

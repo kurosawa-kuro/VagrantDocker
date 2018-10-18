@@ -69,6 +69,43 @@ vagrant halt
 vagrant destroy
 ```
 
+## Provisioning
+
+### init
+- update
+- upgrade
+- change timezone
+- install language-pack-ja
+- check fire wall
+- install tree
+
+### nginx
+- install nginx
+
+### java
+- install java
+
+### play
+- install play
+
+### db_mysql
+- install mysql
+
+### db_postgresql
+- install postgresql
+
+### nodejs
+- install nodejs
+
+### ethereum
+- install ethereum
+
+### docker
+- install docker
+
+### check
+- check library and middleware
+
 # Docker
 
 ```

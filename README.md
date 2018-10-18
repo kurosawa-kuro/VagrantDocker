@@ -101,6 +101,16 @@ vagrant destroy
 ### check
 - check library and middleware
 
+## Vagrant on Docker
+
+```
+git clone https://github.com/kurosawa-kuro/VagrantDocker.git
+cd VagrantDocker/docker
+./script/init_mysql.sh 
+```
+
+[192.168.33.10:3000](http://192.168.33.10:3000)
+
 # Docker
 
 ```

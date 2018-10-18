@@ -80,28 +80,23 @@ vagrant destroy
 - install tree
 
 ### nginx
-- install nginx
 
 ### java
-- install java
 
 ### play
-- install play
 
 ### db_mysql
-- install mysql
 
 ### db_postgresql
-- install postgresql
 
 ### nodejs
-- install nodejs
 
 ### ethereum
-- install ethereum
+- install geth
 
 ### docker
 - install docker
+- install docker-compose
 
 ### check
 - check library and middleware

@@ -165,7 +165,7 @@ docker-compose up web mysql mysql-gui portainer cloud9
 - Docker
 
 ### Other
-
+- Rainbow Brackets
 - sftp
 
 ```

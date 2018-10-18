@@ -32,7 +32,7 @@ vagrant ssh
 - theia-ide
 
 ```
-docker run -it -p 3000:3000 --expose 9229 -p 9229:9229 -v "$(pwd):/home/project:cached" theiaide/theia:next --inspect=0.0.0.0:9229
+docker run -it -p 3000:3000 -v "$(pwd):/home/project:cached" theiaide/theia:next
 ```
 
 [192.168.33.10:3000](http://192.168.33.10:3000)

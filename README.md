@@ -40,7 +40,7 @@ docker run -it -p 3000:3000 -v "$(pwd):/home/project:cached" theiaide/theia:next
 - Cloud9
  
 ```
-docker run -it -d -p 80:80 -v `pwd`:/workspace/ kdelfour/cloud9-docker
+docker run -it -d -p 80:80 -v "$(pwd):/workspace/" kdelfour/cloud9-docker
 ```
 
 [192.168.33.10:80](http://192.168.33.10:80)

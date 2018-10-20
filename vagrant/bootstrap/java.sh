@@ -10,9 +10,9 @@ echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m set constant                      \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-readonly JDK_TAR_GZ="jdk-8u181-linux-x64.tar.gz"
-readonly JDK_TAR_GZ_URL="http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/"$JDK_TAR_GZ
-readonly JDK="jdk1.8.0_181"
+readonly JDK_TAR_GZ="jdk-8u191-linux-x64.tar.gz"
+readonly JDK_TAR_GZ_URL="http://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/"$JDK_TAR_GZ
+readonly JDK="jdk1.8.0_191"
 
 echo $JDK_TAR_GZ
 echo $JDK_TAR_GZ_URL

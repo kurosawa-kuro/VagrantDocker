@@ -42,6 +42,7 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
+
   # 【初期化】
   config.vm.provision :shell, path: "vagrant/bootstrap/init.sh"
   
@@ -49,7 +50,7 @@ Vagrant.configure("2") do |config|
   # # config.vm.provision :shell, path: "vagrant/bootstrap/ws_nginx.sh"
 
   # 【ウェブアプリケーション Scala + Play】
-  config.vm.provision :shell, path: "vagrant/bootstrap/java.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/java.sh"
   # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/waf_play.sh"
 
   # 【データベース】
@@ -62,14 +63,14 @@ Vagrant.configure("2") do |config|
   # config.vm.provision :shell, path: "vagrant/bootstrap/bc_ethereum.sh"
 
   # 【Scala】
-  config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/scala.sh"
+  # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/scala.sh"
 
   # 【Virtual Machine】
   config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/vm_docker.sh"
   # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/vm_kubernetes.sh"
 
-  # 【Download】
-  config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/download.sh"
+  # 【Upload File】
+  config.vm.provision "file", source: "./docker", destination: "$HOME/docker"
 
   # 【チェック】
   config.vm.provision :shell, path: "vagrant/bootstrap/check.sh"

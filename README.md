@@ -11,6 +11,13 @@ Vagrantの操作
 - Vagrantfile  
 Vagrantの設定
 
+# 事前準備
+以下をホストOSに直接インストールしてください。
+
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- [Vagrant](https://www.vagrantup.com/downloads.html)
+
+
 # Vagrant
 
 ## Vagrantで仮想環境作成、ログイン

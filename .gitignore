@@ -14,3 +14,4 @@ test/vagrant-spec/.vagrant/
 /.vagrant/
 
 .vscode/settings.json
+.vscode/sftp.json

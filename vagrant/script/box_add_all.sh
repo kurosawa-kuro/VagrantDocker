@@ -9,5 +9,7 @@ echo -e $'\e[1;31m ================================= \e[m'
 vagrant box add ubuntu/xenial64
 vagrant box add ubuntu/bionic64
 
+vagrant box add bento/centos-6.7
+
 # デバッグを終了する
 set +x

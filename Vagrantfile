@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
   # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/vm_kubernetes.sh"
 
   # 【Upload File】
-  # config.vm.provision "file", source: "./docker", destination: "$HOME/docker"
+  config.vm.provision "file", source: "./docker", destination: "$HOME/docker"
 
   # 【チェック】
   config.vm.provision :shell, path: "vagrant/bootstrap/check.sh"

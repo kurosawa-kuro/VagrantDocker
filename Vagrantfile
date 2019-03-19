@@ -34,8 +34,11 @@ Vagrant.configure("2") do |config|
   # config.vm.provision :shell, path: "vagrant/bootstrap/db_mysql.sh"
 
   # 【Node.js】
-  # config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
+  config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
 
+  # 【MongoDB】
+  config.vm.provision :shell, path: "vagrant/bootstrap/db_mongodb.sh"
+ 
   # 【ブロックチェーン】
   # config.vm.provision :shell, path: "vagrant/bootstrap/bc_ethereum.sh"
 

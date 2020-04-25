@@ -34,10 +34,10 @@ Vagrant.configure("2") do |config|
   # config.vm.provision :shell, path: "vagrant/bootstrap/db_mysql.sh"
 
   # 【Node.js】
-  config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
+  # config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
 
   # 【Posgres】
-  config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/postgres.sh"
+  # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/postgres.sh"
 
   # 【MongoDB】
   # config.vm.provision :shell, path: "vagrant/bootstrap/db_mongodb.sh"

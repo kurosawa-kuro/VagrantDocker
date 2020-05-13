@@ -54,6 +54,7 @@ Vagrant.configure("2") do |config|
 
   # 【Upload File】
   config.vm.provision "file", source: "./docker", destination: "$HOME/docker"
+  config.vm.provision "file", source: "./setup", destination: "$HOME/setup"
 
   # 【チェック】
   config.vm.provision :shell, path: "vagrant/bootstrap/check.sh"

@@ -19,10 +19,10 @@ Vagrant.configure("2") do |config|
       "--ioapic", "on" # I/O APICを有効化
     ]
   end
-  
+
   # 【初期化】
   config.vm.provision :shell, path: "vagrant/bootstrap/init.sh"
-  
+
   # 【ウェブサーバー】
   # # config.vm.provision :shell, path: "vagrant/bootstrap/ws_nginx.sh"
 
@@ -41,7 +41,7 @@ Vagrant.configure("2") do |config|
 
   # 【MongoDB】
   # config.vm.provision :shell, path: "vagrant/bootstrap/db_mongodb.sh"
- 
+
   # 【ブロックチェーン】
   # config.vm.provision :shell, path: "vagrant/bootstrap/bc_ethereum.sh"
 

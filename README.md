@@ -1,3 +1,10 @@
+```
+vagrant ssh-config >> ~/.ssh/config
+```
+
+Remote Development
+
+
 # 構成
 - config/ide  
 IDEの設定

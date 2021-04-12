@@ -36,6 +36,9 @@ Vagrant.configure("2") do |config|
   # 【Node.js】
   # config.vm.provision :shell, path: "vagrant/bootstrap/nodejs.sh"
 
+  # 【Ruby】
+  # config.vm.provision :shell, path: "vagrant/bootstrap/ruby.sh"
+
   # 【Posgres】
   # config.vm.provision :shell, privileged: false, path: "vagrant/bootstrap/postgres.sh"
 

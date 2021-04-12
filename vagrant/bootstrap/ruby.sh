@@ -31,7 +31,7 @@ ruby -v
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m = install rail                  = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-gem install rails -v 5.2.4.3
+gem install rails -v 6.0.3
 rbenv rehash
 rails -v
 

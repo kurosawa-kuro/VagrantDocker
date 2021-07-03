@@ -27,11 +27,11 @@ apt-get purge -y nodejs npm
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m = install typescript            = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-sudo npm install -g typescript
+npm install -g typescript
 
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m = install yarn                  = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-sudo npm install -g yarn
+npm install -g yarn
 # デバッグを終了する
 set +x

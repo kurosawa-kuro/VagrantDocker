@@ -6,7 +6,7 @@
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m install mysql                     \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-sudo apt install mysql-server
+sudo apt install -y mysql-server
 
 echo -e $'\e[1;31m ================================= \e[m'
 echo -e $'\e[1;31m mysql version                     \e[m'

@@ -4,36 +4,33 @@
 # set -x
 
 echo -e $'\e[1;31m ================================= \e[m'
-echo -e $'\e[1;31m = install nvm                   = \e[m'
+echo -e $'\e[1;31m = install                       = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-sudo apt-get install curl
+sudo apt install -y nodejs npm
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-
-echo -e $'\e[1;31m ================================= \e[m'
-echo -e $'\e[1;31m = check nvm                     = \e[m'
-echo -e $'\e[1;31m ================================= \e[m'
-command -v nvm
+sudo npm install n -g
+sudo n stable
 
 echo -e $'\e[1;31m ================================= \e[m'
-echo -e $'\e[1;31m = install node.js               = \e[m'
+echo -e $'\e[1;31m = purge                         = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-nvm install --lts
+sudo apt purge nodejs npm -y
+sudo apt autoremove -y
 
 echo -e $'\e[1;31m ================================= \e[m'
-echo -e $'\e[1;31m = install node.js               = \e[m'
+echo -e $'\e[1;31m = check                         = \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-node --version
+node -v
 
-# echo -e $'\e[1;31m ================================= \e[m'
-# echo -e $'\e[1;31m = install typescript            = \e[m'
-# echo -e $'\e[1;31m ================================= \e[m'
-# npm install -g typescript
+echo -e $'\e[1;31m ================================= \e[m'
+echo -e $'\e[1;31m = install typescript            = \e[m'
+echo -e $'\e[1;31m ================================= \e[m'
+npm install -g typescript
 
-# echo -e $'\e[1;31m ================================= \e[m'
-# echo -e $'\e[1;31m = install yarn                  = \e[m'
-# echo -e $'\e[1;31m ================================= \e[m'
-# npm install -g yarn
+echo -e $'\e[1;31m ================================= \e[m'
+echo -e $'\e[1;31m = install yarn                  = \e[m'
+echo -e $'\e[1;31m ================================= \e[m'
+npm install -g yarn
 
 # デバッグを終了する
 set +x

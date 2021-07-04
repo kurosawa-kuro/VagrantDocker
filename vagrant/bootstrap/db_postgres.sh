@@ -4,13 +4,25 @@
 # set -x
 
 echo -e $'\e[1;31m ================================= \e[m'
-echo -e $'\e[1;31m bootstrap postgres                   \e[m'
+echo -e $'\e[1;31m install postgresql                \e[m'
 echo -e $'\e[1;31m ================================= \e[m'
-echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" | sudo tee -a /etc/apt/sources.list.d/pgdg.list
-curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt install -y postgresql-10
+sudo apt install -y postgresql postgresql-contrib
+
+echo -e $'\e[1;31m ================================= \e[m'
+echo -e $'\e[1;31m postgresql version                \e[m'
+echo -e $'\e[1;31m ================================= \e[m'
+psql --version
+
+echo -e $'\e[1;31m ================================= \e[m'
+echo -e $'\e[1;31m postgresql start                  \e[m'
+echo -e $'\e[1;31m ================================= \e[m'
+sudo service postgresql start
+
+echo -e $'\e[1;31m ================================= \e[m'
+echo -e $'\e[1;31m postgresql status                 \e[m'
+echo -e $'\e[1;31m ================================= \e[m'
+sudo service postgresql status
+
 
 
 # デバッグを終了する
